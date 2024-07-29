@@ -1,0 +1,289 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+body::-webkit-scrollbar {
+  width: 10px;
+}
+body::-webkit-scrollbar-track {
+  background: #270082; /* Background of the scrollbar track */
+}
+body::-webkit-scrollbar-thumb {
+  background: #8a61f27f;
+  border-radius: 10px;
+  border: 1px solid transparent;
+}
+.navbar {
+  background-color: #270082;
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 10vh;
+}
+.nav-logo {
+  margin-left: 8vw;
+}
+.nav-menu {
+  margin-right: 8vw;
+}
+.nav-menu a {
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: 500;
+  color: white;
+  margin-left: 20px;
+  padding: 5px;
+  border: 2px solid transparent;
+}
+.nav-menu a:hover {
+  border: 2px solid white;
+  border-radius: 5px;
+}
+/*-------------Hero Section---------------*/
+.hero-section {
+  background-image: url("/img/hero_image.png");
+  background-size: 100vw 90vh;
+  background-repeat: no-repeat;
+  width: auto;
+  height: 90vh;
+  padding-top: 25vh;
+}
+.hero-logo {
+  color: white;
+  text-align: center;
+}
+.hero-logo h1 {
+  font-size: 3rem;
+}
+.hero-tag {
+  margin: 15px auto;
+}
+.hero-details {
+  text-align: start;
+  width: 60vw;
+  margin: auto;
+}
+/*-----------------------------Music Section----------------------*/
+.music {
+  padding-top: 20px;
+  background-color: #281154;
+  color: white;
+  height: 800px;
+}
+.music-heading {
+  text-align: center;
+}
+.music-heading h1 {
+  margin: 15px auto;
+  font-weight: 600;
+}
+.music-heading h2 {
+  margin: 15px auto;
+  font-weight: 500;
+}
+.music-details {
+  text-align: center;
+  margin: 10px auto;
+  width: 60vw;
+}
+button {
+  background-color: red;
+  border: none;
+  box-shadow: 2px 5px 0px black;
+  padding: 10px;
+  color: white;
+  margin: 25px auto;
+  font-size: 1rem;
+}
+.music-details .tag2 {
+  font-size: 14px;
+  margin: 5px auto;
+}
+/*--------------------------Devices-----------------------*/
+.music-devices {
+  background-image: url("/img/ipad-iphone.png");
+  /* background-color: red; */
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 75vw;
+  height: 750px;
+  margin: 80px auto;
+}
+.music-devices2 {
+  position: relative;
+  top: 70vh;
+  color: black;
+  text-align: center;
+}
+.music-devices2 p {
+  width: 85vw;
+  margin: 20px auto;
+  line-height: 28px;
+}
+.music-devices2 button {
+  background-color: #270082;
+  box-shadow: none;
+}
+.music-mac {
+  background-image: url("/img/mac.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  width: 75vw;
+  height: 600px;
+  margin: 10px auto 10px auto;
+  /* margin: 80px auto; */
+}
+.concert {
+  background-image: url("/img/video.png");
+  background-size: contain;
+  width: 99.3vw;
+  height: 660px;
+  margin-top: 80vh;
+  color: white;
+  text-align: center;
+  padding-top: 200px;
+}
+.concert p {
+  width: 90vw;
+  margin: 50px auto;
+}
+.gift-cards {
+  /* background-color: red; */
+  height: 350px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  margin-top: 100px;
+}
+.card {
+  background-image: url("img/gift_card.png");
+  background-size: cover;
+  width: 35vw;
+  height: 315px;
+  margin-right: 20px;
+}
+.card-details {
+  width: 40vw;
+  /* margin-left: 20px; */
+}
+.card-details hr {
+  margin: 20px auto;
+}
+.card-details button {
+  background-color: #270082;
+  box-shadow: none;
+  margin: none;
+}
+.card-para1 {
+  margin: 15px auto;
+  font-weight: 400;
+}
+.card-para2 {
+  margin: 15px auto;
+}
+@media (min-width: 0px) and (max-width: 767px) {
+  .navbar {
+    display: block;
+    height: auto;
+    text-align: center;
+  }
+  .nav-menu {
+    display: block;
+    margin: auto;
+    height: 2vh;
+    transition: height 0.25s ease-in 0s;
+  }
+  .nav-menu a {
+    display: block;
+    visibility: hidden;
+    margin: 10px 0px 0px 0px;
+  }
+  .nav-logo:hover {
+    border: 1px solid white;
+  }
+  .navbar:hover .nav-menu {
+    height: 35vh;
+    display: block;
+  }
+  .navbar:hover .nav-menu a {
+    visibility: visible;
+  }
+  .nav-logo {
+    margin: auto;
+  }
+  .hero-section {
+    padding-top: 8vh;
+  }
+  .hero-details {
+    width: 90vw;
+    text-align: center;
+  }
+  .music-heading {
+    margin: auto;
+  }
+  .music-details {
+    text-align: center;
+    margin: 10px auto;
+    width: 90vw;
+  }
+  .music-devices {
+    background-size: contain;
+    width: 90vw;
+    height: 400px;
+    margin: auto;
+    margin-top: 10vh;
+  }
+  .music-devices2 {
+    position: relative;
+    top: 10vh;
+    margin: auto;
+  }
+  .music-mac {
+    background-size: contain;
+    width: 100vw;
+    height: 400px;
+    margin: auto;
+  }
+  .concert {
+    background-size: cover;
+    background-position: center;
+    width: auto;
+    margin-top: auto;
+  }
+  .concert p {
+    width: auto;
+  }
+  .gift-cards {
+    display: block;
+    margin-top: 20px;
+  }
+  .card {
+    width: 99vw;
+    height: 220px;
+  }
+  .card-details {
+    width: 100vw;
+    text-align: center;
+  }
+  .card-details hr {
+    margin: 5px auto;
+  }
+}
+@media (min-width: 768px) and (max-width: 1024px) {
+  .music-devices {
+    background-size: contain;
+    width: 90vw;
+    height: 400px;
+    margin: 10vw 25vw;
+  }
+  .music-mac {
+    background-size: contain;
+    width: 100vw;
+    height: 400px;
+    margin: 10vw 15vw;
+  }
+}
